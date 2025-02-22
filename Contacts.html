@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacts</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .navbar{
+            display: flex;
+            align-items: center;
+         background-color: rgb(127, 236, 255);
+            padding: 20px;
+         }
+         a{
+            color: blue;
+            text-decoration: none;
+            margin-left: 10px;
+         }
+    
+    </style>
+
+    <style>
+        .contact-section{
+            padding: 40px;
+            text-align: left;
+        }
+        .contact-section h2{
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .contact-section form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .sb{
+            text-align: center;
+            margin-top: 10px;
+        }
+        label{
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="search-container">
+     <input type="text"  id="searchInput"  placeholder="Search...">
+      <a href="Home.html">Home</a>
+             <a href="About.html">About</a>
+             <a href="Skills.html">skills</a>
+             <a href="contacts.html">contacts</a>
+             
+             </div>
+           </div> 
+    <section id="contacts" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="contactform">
+                <h2>Filling the Form</h2>
+               <label for="name" >Name:</label><input type="text"  id="name" placeholder="Enter your name">
+               <label for="fname">Father Name:</label>
+               <input type="text" name="fname" placeholder="Enter your Father Name" id="fname"> 
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Type your email">
+               <label for="contact">contact:</label>
+               <input type="text" class="contact "  placeholder="Enter mobile number"> 
+            </form>
+            <div class="sb">
+            <label for="submit">Submit:</label> 
+               <input type="text" id="submit" value="submit">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
